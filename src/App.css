@@ -1,9 +1,64 @@
 /* Add styling for your page here */
 
 .App {
-
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: pink;
 }
 
-.BakeryItem {
-  
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bakery-item {
+  width: 40%;
+  margin: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.info-container {
+  padding: 10px;
+}
+
+.bakery-item button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.bakery-items-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex: 1; */
+}
+
+.cart {
+  width: 35%;
+  position: sticky;
 }
